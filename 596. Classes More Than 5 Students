@@ -1,0 +1,10 @@
+Solution:
+import pandas as pd
+
+def find_classes(courses: pd.DataFrame) -> pd.DataFrame:
+    class_count = courses.groupby('class')['student'].count().reset_index()
+    output = class_count[class_count['student']>=5][['class']]
+    return output
+
+
+Link: https://leetcode.com/problems/classes-more-than-5-students/
