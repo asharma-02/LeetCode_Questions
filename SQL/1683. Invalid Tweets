@@ -1,0 +1,4 @@
+SELECT tweet_id FROM tweets where CHAR_LENGTH(content)>15
+
+* LENGTH() returns the length of the string measured in bytes.
+* CHAR_LENGTH() returns the length of the string measured in characters.
